@@ -3,7 +3,7 @@ import '../App.css';
 
 const About = () => {
     return (
-        <div>
+        <div class="body">
             <p>about</p>
             <p>about</p>
             <p>about</p>

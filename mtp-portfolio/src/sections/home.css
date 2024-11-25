@@ -1,0 +1,32 @@
+.intro {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px;
+    margin: auto;
+}
+
+.hi,
+.big-text {
+    font-weight: 700;
+    line-height: 85%;
+}
+
+.hi {
+    font-size: 48px;
+}
+
+.big-text {
+    font-size: 54px;
+}
+
+.info {
+    width: 50%;
+}
+
+.picture {
+    width: 50%;
+    background-color: red;
+    text-align: end;
+}
