@@ -14,7 +14,7 @@
 }
 
 .hi {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .big-text {
@@ -25,8 +25,17 @@
     width: 50%;
 }
 
+.info-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .picture {
     width: 50%;
     background-color: red;
     text-align: end;
+}
+
+.m {
+    color: blue;
 }
