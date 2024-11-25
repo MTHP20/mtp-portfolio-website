@@ -1,25 +1,27 @@
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body {
+  background-color: beige;
+  font-family: 'Montserrat';
+  height: 100vh;
+  width: 65%;
+  margin: auto;
 }
 
 header {
-  padding: 25px;
+  font-family: 'Montserrat';
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 65%;
+  margin: auto;
   display: flex;
-  justify-content: center;
-  gap: 10rem;
+  justify-content: space-between;
   position: sticky;
   z-index: 999;
   top: -10px;
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .fullNav {
-  display: flex;
-  justify-content: center;
   gap: 10rem;
-  background-color: white;
+  background-color: transparent;
 }
 
 .nav1,
