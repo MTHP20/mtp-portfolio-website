@@ -13,16 +13,20 @@ function App() {
     <Router>
       <header>
         <div className="nav1">
-          <Link to="/"><button className="btn btn-outline-dark">HOME</button></Link>
-          <Link to="about"><button className="btn btn-outline-dark">ABOUT</button></Link>
-          <Link to="projects"><button className="btn btn-outline-dark">PROJECTS</button></Link>
-          <Link to="skills"><button className="btn btn-outline-dark">SKILLS</button></Link>
-          <Link to="cv"><button className="btn btn-outline-dark">CV</button></Link>
+          <Link to="/"><button className="btn btn-dark">HOME</button></Link>
+          <Link to="about"><button className="btn btn-dark">ABOUT</button></Link>
+          <Link to="projects"><button className="btn btn-dark">PROJECTS</button></Link>
+          <Link to="skills"><button className="btn btn-dark">SKILLS</button></Link>
+          <Link to="cv"><button className="btn btn-dark">CV</button></Link>
         </div>
         <div className="nav2">
-          <button className="btn btn-outline-dark">EMAIL</button>
-          <button className="btn btn-outline-dark">LINKEDIN</button>
-          <button className="btn btn-outline-dark">GITHUB</button>
+          <button className="btn btn-dark">EMAIL</button>
+          <a href="https://www.linkedin.com/in/mthp/" target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-dark">LINKEDIN</button>
+          </a>
+          <a href="github.com/mthp20" target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-dark">GITHUB</button>
+          </a>
         </div>
       </header>
       <Routes>

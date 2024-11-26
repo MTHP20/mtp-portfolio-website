@@ -1,8 +1,7 @@
 .intro {
-    background-color: antiquewhite;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 800px;
     margin: auto;
 }
@@ -32,10 +31,18 @@
 
 .picture {
     width: 50%;
-    background-color: red;
     text-align: end;
+}
+
+.profile {
+    border-radius: 50%;
+    height: 650px;
 }
 
 .m {
     color: blue;
+}
+
+.highlight {
+    color: #FFC107;
 }
