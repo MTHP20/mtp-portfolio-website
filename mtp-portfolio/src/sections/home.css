@@ -48,12 +48,21 @@
     color: #FFC107;
 }
 
+.songInfo {
+    font-size: 40px;
+    font-weight: 800;
+}
 
 .first,
 .second {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.first.section {
+    display: flex;
+    flex-direction: column;
 }
 
 .contain {

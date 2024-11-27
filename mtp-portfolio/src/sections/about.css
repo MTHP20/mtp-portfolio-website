@@ -1,0 +1,22 @@
+.nav-pills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: #FFC107;
+}
+
+.nav {
+
+    --bs-nav-link-font-weight: 900;
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: #FFC107;
+    --bs-nav-link-disabled-color: black;
+}

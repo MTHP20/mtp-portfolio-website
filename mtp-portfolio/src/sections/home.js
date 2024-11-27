@@ -38,7 +38,7 @@ const Home = () => {
                     <p class="big-text">I'm <span class="highlight">Michael</span></p>
                     <p class="big-text">a Front-End Developer</p>
                     <br></br>
-                    <p class="info-text">
+                    <p className="info-text">
                         In 2024, I proudly graduated with a degree in Computer Science from Royal Holloway, University of London,
                         following three years of rewarding challenges and growth.
                         <br></br><br></br>
@@ -56,29 +56,16 @@ const Home = () => {
                 </div>
             </div>
             <div class="first section">
-                <CContainer class="contain">
-                    <CRow class="yesyes" xs={{ cols: 2 }}>
-                        <CCol >
-                            My interest in technology began with building computers, leading me to study Computer Science at Royal Holloway.
-                            Iow aim to expand my expertise by learning new languages and tackling more ambitious projects.
-                        </CCol>
-                        <CCol >
-                            I enjoy coding in HTML and JavaScript making several projects like this portfolio.
-                            My passion for web development drives me to aspire to start a small business and develop websites for local clients.
-                        </CCol>
-                    </CRow>
-                    <CRow class="yesyes" xs={{ cols: 2 }}>
-                        <CCol>
-                            I've started my career as a Junior Front-End Developer.
-                            With a strong interest in technology consultancy, I aim to apply my skills to deliver high-quality IT solutions.
-                        </CCol>
-                        <CCol>
-                            Outside of work, I stay active by playing basketball and exercising at the gym.
-                            In the near future, I hope to travel and explore new parts of the world.
-                        </CCol>
-                    </CRow>
-                </CContainer>
-            </div>
+                <iframe
+                    style={{ borderRadius: '25px' }}
+                    src="https://open.spotify.com/embed/track/07jRDsccmmp4BuX3eCjqye?utm_source=generator"
+                    width="80%"
+                    height="352"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                />            </div>
             <div class="second section">
                 <Swiper
                     slidesPerView={2.75}
