@@ -7,25 +7,28 @@ import Projects from './sections/projects';
 import Skills from './sections/skills';
 import CV from './sections/cv';
 import './App.css';
+import { BsLinkedin, BsGithub, BsEnvelope } from "react-icons/bs";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <Router>
       <header>
         <div className="nav1">
-          <Link to="/"><button className="btn btn-dark">HOME</button></Link>
+          <Link to="/"><button className="btn btn-warning">HOME</button></Link>
           <Link to="about"><button className="btn btn-dark">ABOUT</button></Link>
           <Link to="projects"><button className="btn btn-dark">PROJECTS</button></Link>
           <Link to="skills"><button className="btn btn-dark">SKILLS</button></Link>
           <Link to="cv"><button className="btn btn-dark">CV</button></Link>
         </div>
         <div className="nav2">
-          <button className="btn btn-dark">EMAIL</button>
+          <button className="btn btn-dark"><BsEnvelope /></button>
           <a href="https://www.linkedin.com/in/mthp/" target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-dark">LINKEDIN</button>
+            <button className="btn btn-dark"><BsLinkedin /></button>
           </a>
           <a href="github.com/mthp20" target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-dark">GITHUB</button>
+            <button className="btn btn-dark"><BsGithub /></button>
           </a>
         </div>
       </header>

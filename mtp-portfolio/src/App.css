@@ -1,3 +1,17 @@
+#root,
+html {
+  background-color: whitesmoke;
+}
+
+.btn {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.btn-warning {
+  color: #444444;
+}
+
 .body {
   font-family: 'Montserrat';
   height: 100vh;
@@ -12,6 +26,7 @@ header {
   width: 80%;
   margin: auto;
   display: flex;
+  color: whitesmoke;
   justify-content: center;
   gap: 10rem;
   position: sticky;
