@@ -50,12 +50,12 @@
 
 
 
+.first,
 .second {
     height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
 }
 
 .contain {
