@@ -58,14 +58,15 @@ const Home = () => {
             <div class="first section">
                 <iframe
                     style={{ borderRadius: '25px' }}
-                    src="https://open.spotify.com/embed/track/07jRDsccmmp4BuX3eCjqye?utm_source=generator"
+                    src="https://open.spotify.com/embed/track/07jRDsccmmp4BuX3eCjqye?utm_source=generator&t=68"
                     width="80%"
                     height="352"
                     frameBorder="0"
                     allowFullScreen
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"
-                />            </div>
+                />
+            </div>
             <div class="second section">
                 <Swiper
                     slidesPerView={2.75}
