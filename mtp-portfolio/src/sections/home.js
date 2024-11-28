@@ -4,7 +4,6 @@ import './home.css';
 import './swiper.css';
 import profile from '../images/mainPhoto.jpg';
 import { Link } from 'react-router-dom';
-import { CCol, CRow, CContainer } from '@coreui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -57,11 +56,11 @@ const Home = () => {
             </div>
             <div class="first section">
                 <iframe
+                    title="Spotify Track Player"
                     style={{ borderRadius: '25px' }}
                     src="https://open.spotify.com/embed/track/07jRDsccmmp4BuX3eCjqye?utm_source=generator&t=68"
                     width="80%"
                     height="352"
-                    frameBorder="0"
                     allowFullScreen
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"
