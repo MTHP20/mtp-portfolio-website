@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './sections/home';
@@ -16,6 +16,11 @@ function App() {
   const getButtonClass = (path) => {
     return location.pathname === path ? "btn btn-warning" : "btn btn-dark";
   };
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top of the page
+  }, [location]);
 
   return (
     <>
