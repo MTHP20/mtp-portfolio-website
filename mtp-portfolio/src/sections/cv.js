@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../App.css';
 import './cv.css';
 import pdf from '../images/CV.pdf'
+import { BsLinkedin, BsGithub, BsLink } from "react-icons/bs";
+
 
 
 const CV = () => {
@@ -35,13 +37,20 @@ const CV = () => {
                             </div>
                         </div>
                     )}
-                    <div className="d-flex justify-content-center gap-5">
-                        <a href="https://www.linkedin.co.uk/in/mthp/">
-                            <button className="btn btn-info">LinkedIn</button>
+                    <div className="d-flex justify-content-center gap-4">
+                        <a href="https://www.linkedin.co.uk/in/mthp/" style={{ textDecoration: 'none' }}>
+                            <button style={{ backgroundColor: '#0A66C2', color: 'white' }}
+                                className="btn d-flex align-items-center gap-2">
+                                <BsLinkedin /> LinkedIn
+                            </button>
                         </a>
-                        <a href="https://github.com/mthp20">
-                            <button className="btn btn-secondary">GitHub</button>
+
+                        <a href="https://github.com/mthp20" style={{ textDecoration: 'none' }}>
+                            <button className="btn btn-secondary d-flex align-items-center gap-2">
+                                <BsGithub /> GitHub
+                            </button>
                         </a>
+
                     </div>
                 </div>
             </div>
