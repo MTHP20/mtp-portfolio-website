@@ -1,0 +1,99 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    margin: auto;
+}
+
+.hi,
+.big-text {
+    font-weight: 700;
+    line-height: 85%;
+}
+
+.hi {
+    font-size: 42px;
+}
+
+.big-text {
+    font-size: 56px;
+}
+
+.info {
+    width: 50%;
+}
+
+.info-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.picture {
+    width: 50%;
+    text-align: end;
+}
+
+.profile {
+    border-radius: 50%;
+    height: 650px;
+    box-shadow: 2px 5px 5px rgba(58, 57, 57, 0.5);
+}
+
+.m {
+    color: blue;
+}
+
+.highlight {
+    color: #FFC107;
+}
+
+.songInfo {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.first,
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 50px;
+    width: 90%;
+    color: #444444;
+    background-color: #FFC107;
+    border-radius: 50px;
+    box-shadow: 5px 5px 6px rgba(68, 68, 68, 0.5);
+}
+
+.yesyes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    gap: 5rem;
+    /* Aligns the first two columns to the top */
+
+}
+
+.CCol {
+    flex: 1;
+    /* Makes columns take equal space */
+    margin: 5px;
+}
