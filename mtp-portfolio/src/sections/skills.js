@@ -60,16 +60,18 @@ const Skills = () => {
                         style={{ flex: '0 0 20%' }}
                         className="d-flex justify-content-center"
                     >
-                        <img
-                            src={image}
-                            alt={`Icons${index + 6}`}
-                            style={{
-                                width: '100%',
-                                maxWidth: '150px',
-                                borderRadius: '50%',
-                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                            }}
-                        />
+                        <div className="image-container">
+                            <img
+                                src={image}
+                                alt={`Icon${index + 1}`}
+                                style={{
+                                    width: '100%',
+                                    borderRadius: '50%',
+                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                }}
+                            />
+                            <div className="text-overlay">Skill {index + 1}</div>
+                        </div>
                     </CCol>
                 ))}
             </CRow>
@@ -80,16 +82,18 @@ const Skills = () => {
                         style={{ flex: '0 0 20%' }}
                         className="d-flex justify-content-center"
                     >
-                        <img
-                            src={image}
-                            alt={`Icons${index + 6}`}
-                            style={{
-                                width: '100%',
-                                maxWidth: '150px',
-                                borderRadius: '50%',
-                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                            }}
-                        />
+                        <div className="image-container">
+                            <img
+                                src={image}
+                                alt={`Icon${index + 1}`}
+                                style={{
+                                    width: '100%',
+                                    borderRadius: '50%',
+                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                }}
+                            />
+                            <div className="text-overlay">Skill {index + 1}</div>
+                        </div>
                     </CCol>
                 ))}
             </CRow>
@@ -100,16 +104,18 @@ const Skills = () => {
                         style={{ flex: '0 0 20%' }}
                         className="d-flex justify-content-center"
                     >
-                        <img
-                            src={image}
-                            alt={`Icons${index + 6}`}
-                            style={{
-                                width: '100%',
-                                maxWidth: '150px',
-                                borderRadius: '50%',
-                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                            }}
-                        />
+                        <div className="image-container">
+                            <img
+                                src={image}
+                                alt={`Icon${index + 1}`}
+                                style={{
+                                    width: '100%',
+                                    borderRadius: '50%',
+                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                }}
+                            />
+                            <div className="text-overlay">Skill {index + 1}</div>
+                        </div>
                     </CCol>
                 ))}
             </CRow>
@@ -120,16 +126,18 @@ const Skills = () => {
                         style={{ flex: '0 0 20%' }}
                         className="d-flex justify-content-center"
                     >
-                        <img
-                            src={image}
-                            alt={`Icons${index + 6}`}
-                            style={{
-                                width: '100%',
-                                maxWidth: '150px',
-                                borderRadius: '50%',
-                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                            }}
-                        />
+                        <div className="image-container">
+                            <img
+                                src={image}
+                                alt={`Icon${index + 1}`}
+                                style={{
+                                    width: '100%',
+                                    borderRadius: '50%',
+                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                }}
+                            />
+                            <div className="text-overlay">Skill {index + 1}</div>
+                        </div>
                     </CCol>
                 ))}
             </CRow>
@@ -140,16 +148,18 @@ const Skills = () => {
                         style={{ flex: '0 0 20%' }}
                         className="d-flex justify-content-center"
                     >
-                        <img
-                            src={image}
-                            alt={`Icons${index + 6}`}
-                            style={{
-                                width: '100%',
-                                maxWidth: '150px',
-                                borderRadius: '50%',
-                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                            }}
-                        />
+                        <div className="image-container">
+                            <img
+                                src={image}
+                                alt={`Icon${index + 1}`}
+                                style={{
+                                    width: '100%',
+                                    borderRadius: '50%',
+                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                }}
+                            />
+                            <div className="text-overlay">Skill {index + 1}</div>
+                        </div>
                     </CCol>
                 ))}
             </CRow>
@@ -160,16 +170,18 @@ const Skills = () => {
                         style={{ flex: '0 0 20%' }}
                         className="d-flex justify-content-center"
                     >
-                        <img
-                            src={image}
-                            alt={`Icons${index + 6}`}
-                            style={{
-                                width: '100%',
-                                maxWidth: '150px',
-                                borderRadius: '50%',
-                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                            }}
-                        />
+                        <div className="image-container">
+                            <img
+                                src={image}
+                                alt={`Icon${index + 1}`}
+                                style={{
+                                    width: '100%',
+                                    borderRadius: '50%',
+                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                }}
+                            />
+                            <div className="text-overlay">Skill {index + 1}</div>
+                        </div>
                     </CCol>
                 ))}
             </CRow>
@@ -180,16 +192,18 @@ const Skills = () => {
                         style={{ flex: '0 0 20%' }}
                         className="d-flex justify-content-center"
                     >
-                        <img
-                            src={image}
-                            alt={`Icons${index + 6}`}
-                            style={{
-                                width: '100%',
-                                maxWidth: '150px',
-                                borderRadius: '50%',
-                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                            }}
-                        />
+                        <div className="image-container">
+                            <img
+                                src={image}
+                                alt={`Icon${index + 1}`}
+                                style={{
+                                    width: '100%',
+                                    borderRadius: '50%',
+                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                }}
+                            />
+                            <div className="text-overlay">Skill {index + 1}</div>
+                        </div>
                     </CCol>
                 ))}
             </CRow>
