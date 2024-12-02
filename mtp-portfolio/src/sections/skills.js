@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import '../App.css';
+import './skills.css';
 import { CRow, CCol, CContainer } from '@coreui/react';
 
 const Skills = () => {
@@ -33,6 +34,7 @@ const Skills = () => {
         require('../images/skills/26.png'),
     ];
 
+    const [loading, setLoading] = useState(true);
     const firstRowImages = images.slice(0, 4);
     const secondRowImages = images.slice(4, 9);
     const thirdRowImages = images.slice(9, 14);
@@ -40,152 +42,158 @@ const Skills = () => {
     const fifthRowImages = images.slice(18, 21);
     const sixthRowImages = images.slice(21, 23);
     const seventhRowImages = images.slice(23, 26);
+    const [animateRow, setAnimateRow] = useState(false);
 
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+            setTimeout(() => setAnimateRow(true), 100);
+        }, 500);
+    }, []);
 
     return (
-        <div class="body">
-            <CContainer>
-                <CRow className="justify-content-center mb-5">
-                    {firstRowImages.map((image, index) => (
-                        <CCol
-                            key={index + 5}
-                            style={{ flex: '0 0 20%' }}
-                            className="d-flex justify-content-center"
-                        >
-                            <img
-                                src={image}
-                                alt={`Icons${index + 6}`}
-                                style={{
-                                    width: '100%',
-                                    maxWidth: '150px',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                        </CCol>
-                    ))}
-                </CRow>
-                <CRow className="justify-content-center mb-5">
-                    {secondRowImages.map((image, index) => (
-                        <CCol
-                            key={index + 5}
-                            style={{ flex: '0 0 20%' }}
-                            className="d-flex justify-content-center"
-                        >
-                            <img
-                                src={image}
-                                alt={`Icons${index + 6}`}
-                                style={{
-                                    width: '100%',
-                                    maxWidth: '150px',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                        </CCol>
-                    ))}
-                </CRow>
-                <CRow className="justify-content-center mb-5">
-                    {thirdRowImages.map((image, index) => (
-                        <CCol
-                            key={index + 5}
-                            style={{ flex: '0 0 20%' }}
-                            className="d-flex justify-content-center"
-                        >
-                            <img
-                                src={image}
-                                alt={`Icons${index + 6}`}
-                                style={{
-                                    width: '100%',
-                                    maxWidth: '150px',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                        </CCol>
-                    ))}
-                </CRow>
-                <CRow className="justify-content-center mb-5">
-                    {fourthRowImages.map((image, index) => (
-                        <CCol
-                            key={index + 5}
-                            style={{ flex: '0 0 20%' }}
-                            className="d-flex justify-content-center"
-                        >
-                            <img
-                                src={image}
-                                alt={`Icons${index + 6}`}
-                                style={{
-                                    width: '100%',
-                                    maxWidth: '150px',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                        </CCol>
-                    ))}
-                </CRow>
-                <CRow className="justify-content-center mb-5">
-                    {fifthRowImages.map((image, index) => (
-                        <CCol
-                            key={index + 5}
-                            style={{ flex: '0 0 20%' }}
-                            className="d-flex justify-content-center"
-                        >
-                            <img
-                                src={image}
-                                alt={`Icons${index + 6}`}
-                                style={{
-                                    width: '100%',
-                                    maxWidth: '150px',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                        </CCol>
-                    ))}
-                </CRow>
-                <CRow className="justify-content-center mb-5">
-                    {sixthRowImages.map((image, index) => (
-                        <CCol
-                            key={index + 5}
-                            style={{ flex: '0 0 20%' }}
-                            className="d-flex justify-content-center"
-                        >
-                            <img
-                                src={image}
-                                alt={`Icons${index + 6}`}
-                                style={{
-                                    width: '100%',
-                                    maxWidth: '150px',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                        </CCol>
-                    ))}
-                </CRow>
-                <CRow className="justify-content-center mb-5">
-                    {seventhRowImages.map((image, index) => (
-                        <CCol
-                            key={index + 5}
-                            style={{ flex: '0 0 20%' }}
-                            className="d-flex justify-content-center"
-                        >
-                            <img
-                                src={image}
-                                alt={`Icons${index + 6}`}
-                                style={{
-                                    width: '100%',
-                                    maxWidth: '150px',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                        </CCol>
-                    ))}
-                </CRow>
-            </CContainer>
+        <div className={`body ${loading ? 'invisible' : ''}`} style={{ opacity: loading ? 0 : 1, transition: 'opacity 1s ease' }}>            <CContainer>
+            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                {firstRowImages.map((image, index) => (
+                    <CCol
+                        key={index + 5}
+                        style={{ flex: '0 0 20%' }}
+                        className="d-flex justify-content-center"
+                    >
+                        <img
+                            src={image}
+                            alt={`Icons${index + 6}`}
+                            style={{
+                                width: '100%',
+                                maxWidth: '150px',
+                                borderRadius: '50%',
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                            }}
+                        />
+                    </CCol>
+                ))}
+            </CRow>
+            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                {secondRowImages.map((image, index) => (
+                    <CCol
+                        key={index + 5}
+                        style={{ flex: '0 0 20%' }}
+                        className="d-flex justify-content-center"
+                    >
+                        <img
+                            src={image}
+                            alt={`Icons${index + 6}`}
+                            style={{
+                                width: '100%',
+                                maxWidth: '150px',
+                                borderRadius: '50%',
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                            }}
+                        />
+                    </CCol>
+                ))}
+            </CRow>
+            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                {thirdRowImages.map((image, index) => (
+                    <CCol
+                        key={index + 5}
+                        style={{ flex: '0 0 20%' }}
+                        className="d-flex justify-content-center"
+                    >
+                        <img
+                            src={image}
+                            alt={`Icons${index + 6}`}
+                            style={{
+                                width: '100%',
+                                maxWidth: '150px',
+                                borderRadius: '50%',
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                            }}
+                        />
+                    </CCol>
+                ))}
+            </CRow>
+            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                {fourthRowImages.map((image, index) => (
+                    <CCol
+                        key={index + 5}
+                        style={{ flex: '0 0 20%' }}
+                        className="d-flex justify-content-center"
+                    >
+                        <img
+                            src={image}
+                            alt={`Icons${index + 6}`}
+                            style={{
+                                width: '100%',
+                                maxWidth: '150px',
+                                borderRadius: '50%',
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                            }}
+                        />
+                    </CCol>
+                ))}
+            </CRow>
+            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                {fifthRowImages.map((image, index) => (
+                    <CCol
+                        key={index + 5}
+                        style={{ flex: '0 0 20%' }}
+                        className="d-flex justify-content-center"
+                    >
+                        <img
+                            src={image}
+                            alt={`Icons${index + 6}`}
+                            style={{
+                                width: '100%',
+                                maxWidth: '150px',
+                                borderRadius: '50%',
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                            }}
+                        />
+                    </CCol>
+                ))}
+            </CRow>
+            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                {sixthRowImages.map((image, index) => (
+                    <CCol
+                        key={index + 5}
+                        style={{ flex: '0 0 20%' }}
+                        className="d-flex justify-content-center"
+                    >
+                        <img
+                            src={image}
+                            alt={`Icons${index + 6}`}
+                            style={{
+                                width: '100%',
+                                maxWidth: '150px',
+                                borderRadius: '50%',
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                            }}
+                        />
+                    </CCol>
+                ))}
+            </CRow>
+            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                {seventhRowImages.map((image, index) => (
+                    <CCol
+                        key={index + 5}
+                        style={{ flex: '0 0 20%' }}
+                        className="d-flex justify-content-center"
+                    >
+                        <img
+                            src={image}
+                            alt={`Icons${index + 6}`}
+                            style={{
+                                width: '100%',
+                                maxWidth: '150px',
+                                borderRadius: '50%',
+                                boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                            }}
+                        />
+                    </CCol>
+                ))}
+            </CRow>
+        </CContainer>
         </div>
     );
 };
