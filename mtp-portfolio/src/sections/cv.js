@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css';
 import './cv.css';
 import pdf from '../images/CV.pdf'
-import { BsLinkedin, BsGithub, BsLink } from "react-icons/bs";
+import { BsLinkedin, BsGithub, } from "react-icons/bs";
 
 
 
