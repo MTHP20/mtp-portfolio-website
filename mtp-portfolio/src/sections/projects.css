@@ -1,0 +1,38 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    margin: auto;
+}
+
+.color {
+    color: #FFC107;
+}
+
+.titleText {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.carousel_container {
+    box-shadow: 2px 5px 5px rgba(58, 57, 57, 0.5);
+}
+
+.captionContainer {
+    background-color: red;
+    width: auto;
+}
+
+.auto-width-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
