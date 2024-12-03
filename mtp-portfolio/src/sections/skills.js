@@ -5,6 +5,7 @@ import { CRow, CCol, CContainer } from '@coreui/react';
 
 const Skills = () => {
 
+    // Array of image sources
     const images = [
         require('../images/skills/1.png'),
         require('../images/skills/2.png'),
@@ -34,6 +35,17 @@ const Skills = () => {
         require('../images/skills/26.png'),
     ];
 
+    // Array of personalized texts for each image
+    const imageTexts = [
+        'Utilised many JAVA projects inc. PostFix Calculator', 'Skill 2 Description', 'Skill 3 Description', 'Skill 4 Description',
+        'Skill 5 Description', 'Skill 6 Description', 'Skill 7 Description', 'Skill 8 Description',
+        'Skill 9 Description', 'Skill 10 Description', 'Skill 11 Description', 'Skill 12 Description',
+        'Skill 13 Description', 'Skill 14 Description', 'Skill 15 Description', 'Skill 16 Description',
+        'Skill 17 Description', 'Skill 18 Description', 'Skill 19 Description', 'Skill 20 Description',
+        'Skill 21 Description', 'Skill 22 Description', 'Skill 23 Description', 'Skill 24 Description',
+        'Skill 25 Description', 'Skill 26 Description',
+    ];
+
     const [loading, setLoading] = useState(true);
     const firstRowImages = images.slice(0, 4);
     const secondRowImages = images.slice(4, 9);
@@ -52,162 +64,135 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className={`body ${loading ? 'invisible' : ''}`} style={{ opacity: loading ? 0 : 1, transition: 'opacity 1s ease' }}>            <CContainer>
-            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
-                {firstRowImages.map((image, index) => (
-                    <CCol
-                        key={index + 5}
-                        style={{ flex: '0 0 20%' }}
-                        className="d-flex justify-content-center"
-                    >
-                        <div className="image-container">
-                            <img
-                                src={image}
-                                alt={`Icon${index + 1}`}
-                                style={{
-                                    width: '100%',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                            <div className="text-overlay">Skill {index + 1}</div>
-                        </div>
-                    </CCol>
-                ))}
-            </CRow>
-            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
-                {secondRowImages.map((image, index) => (
-                    <CCol
-                        key={index + 5}
-                        style={{ flex: '0 0 20%' }}
-                        className="d-flex justify-content-center"
-                    >
-                        <div className="image-container">
-                            <img
-                                src={image}
-                                alt={`Icon${index + 1}`}
-                                style={{
-                                    width: '100%',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                            <div className="text-overlay">Skill {index + 1}</div>
-                        </div>
-                    </CCol>
-                ))}
-            </CRow>
-            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
-                {thirdRowImages.map((image, index) => (
-                    <CCol
-                        key={index + 5}
-                        style={{ flex: '0 0 20%' }}
-                        className="d-flex justify-content-center"
-                    >
-                        <div className="image-container">
-                            <img
-                                src={image}
-                                alt={`Icon${index + 1}`}
-                                style={{
-                                    width: '100%',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                            <div className="text-overlay">Skill {index + 1}</div>
-                        </div>
-                    </CCol>
-                ))}
-            </CRow>
-            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
-                {fourthRowImages.map((image, index) => (
-                    <CCol
-                        key={index + 5}
-                        style={{ flex: '0 0 20%' }}
-                        className="d-flex justify-content-center"
-                    >
-                        <div className="image-container">
-                            <img
-                                src={image}
-                                alt={`Icon${index + 1}`}
-                                style={{
-                                    width: '100%',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                            <div className="text-overlay">Skill {index + 1}</div>
-                        </div>
-                    </CCol>
-                ))}
-            </CRow>
-            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
-                {fifthRowImages.map((image, index) => (
-                    <CCol
-                        key={index + 5}
-                        style={{ flex: '0 0 20%' }}
-                        className="d-flex justify-content-center"
-                    >
-                        <div className="image-container">
-                            <img
-                                src={image}
-                                alt={`Icon${index + 1}`}
-                                style={{
-                                    width: '100%',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                            <div className="text-overlay">Skill {index + 1}</div>
-                        </div>
-                    </CCol>
-                ))}
-            </CRow>
-            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
-                {sixthRowImages.map((image, index) => (
-                    <CCol
-                        key={index + 5}
-                        style={{ flex: '0 0 20%' }}
-                        className="d-flex justify-content-center"
-                    >
-                        <div className="image-container">
-                            <img
-                                src={image}
-                                alt={`Icon${index + 1}`}
-                                style={{
-                                    width: '100%',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                            <div className="text-overlay">Skill {index + 1}</div>
-                        </div>
-                    </CCol>
-                ))}
-            </CRow>
-            <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
-                {seventhRowImages.map((image, index) => (
-                    <CCol
-                        key={index + 5}
-                        style={{ flex: '0 0 20%' }}
-                        className="d-flex justify-content-center"
-                    >
-                        <div className="image-container">
-                            <img
-                                src={image}
-                                alt={`Icon${index + 1}`}
-                                style={{
-                                    width: '100%',
-                                    borderRadius: '50%',
-                                    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
-                                }}
-                            />
-                            <div className="text-overlay">Skill {index + 1}</div>
-                        </div>
-                    </CCol>
-                ))}
-            </CRow>
-        </CContainer>
+        <div className={`body ${loading ? 'invisible' : ''}`} style={{ opacity: loading ? 0 : 1, transition: 'opacity 1s ease' }}>
+            <CContainer>
+                <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                    {firstRowImages.map((image, index) => (
+                        <CCol key={index + 5} style={{ flex: '0 0 20%' }} className="d-flex justify-content-center">
+                            <div className="img-container">
+                                <img
+                                    src={image}
+                                    alt={`Icon${index + 1}`}
+                                    style={{
+                                        width: '100%',
+                                        borderRadius: '50%',
+                                        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                    }}
+                                />
+                                <div className="text-overlay">{imageTexts[index]}</div>
+                            </div>
+                        </CCol>
+                    ))}
+                </CRow>
+                <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                    {secondRowImages.map((image, index) => (
+                        <CCol key={index + 5} style={{ flex: '0 0 20%' }} className="d-flex justify-content-center">
+                            <div className="img-container">
+                                <img
+                                    src={image}
+                                    alt={`Icon${index + 6}`}
+                                    style={{
+                                        width: '100%',
+                                        borderRadius: '50%',
+                                        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                    }}
+                                />
+                                <div className="text-overlay">{imageTexts[index + 4]}</div>
+                            </div>
+                        </CCol>
+                    ))}
+                </CRow>
+                <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                    {thirdRowImages.map((image, index) => (
+                        <CCol key={index + 5} style={{ flex: '0 0 20%' }} className="d-flex justify-content-center">
+                            <div className="img-container">
+                                <img
+                                    src={image}
+                                    alt={`Icon${index + 6}`}
+                                    style={{
+                                        width: '100%',
+                                        borderRadius: '50%',
+                                        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                    }}
+                                />
+                                <div className="text-overlay">{imageTexts[index + 4]}</div>
+                            </div>
+                        </CCol>
+                    ))}
+                </CRow>
+                <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                    {fourthRowImages.map((image, index) => (
+                        <CCol key={index + 5} style={{ flex: '0 0 20%' }} className="d-flex justify-content-center">
+                            <div className="img-container">
+                                <img
+                                    src={image}
+                                    alt={`Icon${index + 6}`}
+                                    style={{
+                                        width: '100%',
+                                        borderRadius: '50%',
+                                        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                    }}
+                                />
+                                <div className="text-overlay">{imageTexts[index + 4]}</div>
+                            </div>
+                        </CCol>
+                    ))}
+                </CRow>
+                <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                    {fifthRowImages.map((image, index) => (
+                        <CCol key={index + 5} style={{ flex: '0 0 20%' }} className="d-flex justify-content-center">
+                            <div className="img-container">
+                                <img
+                                    src={image}
+                                    alt={`Icon${index + 6}`}
+                                    style={{
+                                        width: '100%',
+                                        borderRadius: '50%',
+                                        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                    }}
+                                />
+                                <div className="text-overlay">{imageTexts[index + 4]}</div>
+                            </div>
+                        </CCol>
+                    ))}
+                </CRow>
+                <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                    {sixthRowImages.map((image, index) => (
+                        <CCol key={index + 5} style={{ flex: '0 0 20%' }} className="d-flex justify-content-center">
+                            <div className="img-container">
+                                <img
+                                    src={image}
+                                    alt={`Icon${index + 6}`}
+                                    style={{
+                                        width: '100%',
+                                        borderRadius: '50%',
+                                        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                    }}
+                                />
+                                <div className="text-overlay">{imageTexts[index + 4]}</div>
+                            </div>
+                        </CCol>
+                    ))}
+                </CRow>
+                <CRow className={`justify-content-center mb-5 ${animateRow ? 'slide-in-left' : ''}`}>
+                    {seventhRowImages.map((image, index) => (
+                        <CCol key={index + 5} style={{ flex: '0 0 20%' }} className="d-flex justify-content-center">
+                            <div className="img-container">
+                                <img
+                                    src={image}
+                                    alt={`Icon${index + 6}`}
+                                    style={{
+                                        width: '100%',
+                                        borderRadius: '50%',
+                                        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.3)',
+                                    }}
+                                />
+                                <div className="text-overlay">{imageTexts[index + 4]}</div>
+                            </div>
+                        </CCol>
+                    ))}
+                </CRow>
+            </CContainer>
         </div>
     );
 };
